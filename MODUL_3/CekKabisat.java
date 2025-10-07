@@ -8,12 +8,17 @@ public class CekKabisat{
     int tahun= scanner.nextInt();
     boolean kabisat;
 
-    if((tahun % 4 == 0 && tahun % 100 != 0 && tahun % 400 != 0) || (tahun % 400 == 0))
-        kabisat=true;
+    if(tahun % 400 == 0)
+        kabisat = true;
+    else if(tahun % 100 == 0)
+        kabisat = false;
+    else if(tahun % 4 == 0)
+        kabisat = true;
     else
-        kabisat=false;
+        kabisat = false;
 
+    System.out.println("Tahun "+ tahun + ((kabisat) ? " adalah " : " bukan ") + "tahun kabisat");
 
-    System.out.println("Tahun "+tahun+ ((kabisat) ? " adalah " : " bukan ") + "tahun kabisat");
+    scanner.close();
 }
 }

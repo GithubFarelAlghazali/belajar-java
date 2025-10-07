@@ -13,16 +13,17 @@ public class AdikKakakTebakAngka{
         jawaban_adik  = scanner.nextInt();
         jawaban_kakak  = scanner.nextInt();
       
-        int selisih = Math.abs(jawaban_adik - 100);
+        int selisih = (jawaban_adik > jawaban_kakak) ? jawaban_adik - jawaban_kakak : jawaban_kakak - jawaban_adik;
 
         // Proses perhitungan
-        if(selisih == 0 || selisih == 1 || selisih == 5){
+        if(jawaban_adik == jawaban_kakak || selisih == 1 || selisih == 5){
             adik_pemenang = true;
         } else {
             adik_pemenang = false;
         }
         // Output hasil perhitungan
         System.out.println( adik_pemenang);
+        System.out.println( selisih);
         
         // tutup scanner
         scanner.close();

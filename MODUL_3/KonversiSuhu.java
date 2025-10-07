@@ -14,5 +14,7 @@ public class KonversiSuhu{
     System.out.println("Suhu dalam Fahrenheit: "+ fahrenheit);
     System.out.println("Suhu dalam Reamur: "+ reamur);
     System.out.println("Suhu dalam Kelvin: "+ kelvin);
+
+    scanner.close();
     }
 }
