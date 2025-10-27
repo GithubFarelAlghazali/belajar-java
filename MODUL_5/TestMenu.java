@@ -5,8 +5,13 @@ public class TestMenu{
         Scanner scanner = new Scanner(System.in);
         String opsi;
 
-        System.out.println("============================\n1. Mendaftar\n2. Lupa nama pengguna\n3. Temukan kata sandi anda\n4. End\n============================");
-        System.out.print("Masukkan menu yang anda inginkan: ");
+        System.out.println("============================");
+        System.out.println("Masukkan menu yang anda inginkan: ");
+        System.out.println("1. Mendaftar");
+        System.out.println("2. Lupa nama pengguna");
+        System.out.println("3. Temukan kata sandi anda");
+        System.out.println("4. End");
+        System.out.println("============================");
         int nomorOpsi = scanner.nextInt();
 
         switch (nomorOpsi) {
@@ -20,7 +25,7 @@ public class TestMenu{
                 opsi = "Pengambilan kata sandi berhasil!!";
                 break;
             case 4:
-                opsi = "Udahan nih? daaa.. :()";
+                opsi = "Udahan nih? daaa.. :(";
                 break;
             default:
                 throw new AssertionError();

@@ -1,12 +1,18 @@
 public class GuGuDanTest{
     public static void main(String[] args){
-        int i = 1;
+        int row = 1;
+        int col = 1;
         int max = 9;
-        int firstNum = 9;
-
-        do{
-           System.out.println(firstNum + " * " + i + " = " + (i*firstNum) + ", "); 
-           i++;
-        } while (i <= max);
+  
+        while(row <= max){
+            while(col <= max){
+                System.out.print(row + " * " + col + " = " + (row * col) + (col == max ? " \t" : ",\t"));
+                col++;
+            }
+            System.out.println();
+            row++;
+            col = 1;
+        }
+       
     }
 }
