@@ -8,13 +8,13 @@ public class BarisBilangan{
         int m = scanner.nextInt();
 
         for(int i = n; i <= m; i++){
-            double hasil;
+            float hasil;
             if(i % 2 != 0){
-               hasil = Math.pow(2, i);
+               hasil = (float) Math.pow(2, i);
             } else {
-               hasil = Math.pow(2, -i);
+               hasil = (float) Math.pow(2, -i);
             }
-            System.out.print(hasil + " ");
+            System.out.printf("%.2f ",hasil);
         }
     }
 }
